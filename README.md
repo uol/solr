@@ -42,3 +42,8 @@ searchParams := &solr.SearchParams{
 inst.Search(searchParams, "CollectionName")
 
 ```
+## Delete collection:
+```
+inst.Delete("CollectionName")
+
+```
