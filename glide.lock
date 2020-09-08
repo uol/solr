@@ -1,0 +1,28 @@
+hash: 4ba8b9a0004ed04dee1b4df849d9d5595495390dbce4744c509ae8a7798f08f4
+updated: 2020-07-28T12:29:57.237492425-03:00
+imports:
+- name: github.com/buger/jsonparser
+  version: 63af0e0b6f304f0f4f7ea28e53ac7dd3246a31bb
+- name: github.com/uol/funks
+  version: 55da5624a31410da47c9384b549ea6d1922e188d
+- name: github.com/uol/gotest
+  version: 14fbd91aa1dfad92f40d11830bb3457b1addf753
+  subpackages:
+  - http
+testImports:
+- name: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- name: github.com/jinzhu/copier
+  version: b57f9002281ac48ed8cbc489b1e91121e1a0824c
+- name: github.com/pmezard/go-difflib
+  version: 5d4384ee4fb2527b0a1256a821ebfc92f91efefc
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 3ebf1ddaeb260c4b1ae502a01c7844fa8c1fa0e9
+  subpackages:
+  - assert
+- name: gopkg.in/yaml.v2
+  version: 0b1645d91e851e735d3e23330303ce81f70adbe3
