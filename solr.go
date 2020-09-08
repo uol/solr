@@ -31,8 +31,8 @@ func NewCore(coreURL string, httpGeTimeout, httpPosTimeout time.Duration, httpGe
 	listURL.WriteString(coreURL)
 	listURL.WriteString(actionStatus)
 
-	clientGet := funks.CreateHTTPClient(httpGeTimeout, true, httpGetmaxConn)
-	clientPost := funks.CreateHTTPClient(httpPosTimeout, true, httpPotmaxConn)
+	clientGet := funks.CreateHTTPClientAdv(httpGeTimeout, true, httpGetmaxConn)
+	clientPost := funks.CreateHTTPClientAdv(httpPosTimeout, true, httpPotmaxConn)
 	return &Instance{
 		coreURL:        coreURL,
 		isCloud:        false,
@@ -88,8 +88,8 @@ func NewCloud(coreURL string, httpGeTimeout, httpPosTimeout time.Duration, httpG
 	listURL.WriteString(coreURL)
 	listURL.WriteString(listCollection)
 
-	clientGet := funks.CreateHTTPClient(httpGeTimeout, true, httpGetmaxConn)
-	clientPost := funks.CreateHTTPClient(httpPosTimeout, true, httpPotmaxConn)
+	clientGet := funks.CreateHTTPClientAdv(httpGeTimeout, true, httpGetmaxConn)
+	clientPost := funks.CreateHTTPClientAdv(httpPosTimeout, true, httpPotmaxConn)
 
 	return &Instance{
 		coreURL:           coreURL,

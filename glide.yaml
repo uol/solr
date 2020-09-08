@@ -2,7 +2,7 @@ package: github.com/uol/solr
 import:
 - package: github.com/buger/jsonparser
 - package: github.com/uol/funks
-  version: v1.3.0
+  version: v1.3.1
 - package: github.com/uol/gotest
   version: v1.8.2
 testImport:
