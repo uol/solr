@@ -2,22 +2,26 @@
 A simple solr client lib.
 
 
-## Example:
+## Create a solr instance:
 ```
-Create a solr instance:
+
 inst, err := NewCloud(getSolrAddress(), time.Duration(20*time.Second), time.Duration(20*time.Second), 100, 100, params, &solr.DefaultDocumentParser{}, &solr.DefaultDocumentWriter{})
 if err != nil {
 		panic(err)
 	}
+	
+```
 
-Create a collection:
+## Create a collection:
+```
 err := inst.Create("CollectionName")
 if err != nil {
 		panic(err)
 	}
 
-
-Send documents to solr server:
+```
+## Send documents to solr server:
+```
 params := make(map[string]string)
 payload := `{
 	"id": 1,
@@ -27,8 +31,10 @@ err = inst.UpdateDocument("CollectionName", params, payload)
 if err != nil {
 	panic(err)
 }
+```
 
-Search documents:
+## Search documents:
+```
 searchParams := &solr.SearchParams{
     Q:      "*:*",
 	Rows:   10,
